@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Demo</title>
+        <link rel="stylesheet" href="style1.css">
+        <style>
+     .container {
+            display: grid;
+            border: 2px solid black;
+            grid-template-columns: repeat(3, 80px);
+            grid-template-rows: repeat(3, 80px);
+            gap: 30px;
+            width: 80vw;
+            height: 100vh;
+            justify-content: center;
+             /* justify-items: center; */
+            /* align-items: center;  */
+            /* align-content: center;  */
+            /* justify-content: center;   */
+            /* place-content: center; */
+            place-items: center;
+            box-sizing: border-box;
+            grid-auto-columns: 80px;
+            grid-auto-flow: column dense;
+            
+        }  
+         .items {
+            border: 2px solid #ee0909;
+            padding: 10px;
+            text-align: center;
+            width: 55px;
+            height: 55px;
+        }
+        .item4 {
+            /* grid-row: 1 / 2;
+            grid-column: 1 / 2; */
+          /* align-self: flex-start;
+          justify-self: flex-end; */
+        }
+        .item1 {
+            
+        } 
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="items item1">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items item4">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+            <div class="items">9</div>
+            <div class="items">10</div>
+            <div class="items">11</div>
+            <div class="items">12</div>
+            <div class="items">13</div>
+            <div class="items">14</div>
+            <div class="items">15</div>
+        </div>
+    </body>
+</html>

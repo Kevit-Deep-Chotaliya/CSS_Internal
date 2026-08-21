@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transition-demo</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Bungee&display=swap');
+
+        /* CSS Transition     */
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            text-align: center;
+            display: block;
+            transition: width 2s, height 2s, background-color 2s, rotate 5s;
+        }
+        .box:hover {
+             background-color: #ffcccc;
+             width: 300px;
+             height: 300px;
+             rotate: 90deg;
+        }
+        .nav {
+            display: flex;
+        }
+        a {
+            background-color: #333333;
+            color: white;
+            border: 1px solid;
+            padding: 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.5s ease-out;
+        }
+
+        a:hover,
+        a:focus {
+            background-color: white;
+            color: #333333;
+        }
+
+        /* Scaling background images */
+
+        #banner {
+            text-align: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAcwRVI1VDiru0FczGXrEM_Cc1DAIU7V8E7hEiBLlyqg&s=10");
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: rgb(62, 9, 207);
+            font-weight: 900;
+            background-size: cover;
+        }
+        #banner h5 { 
+            font-weight: 300;
+            color: white;background-image: url("../img/spaceship@2x.png");
+
+            font-size: 2.10rem;
+        }
+        * {
+             font-family: "Bungee", sans-serif;    
+
+        }
+
+        /* Media Query  */
+        
+        @media only screen and (max-width: 480px) {
+            h5{
+                background-color: rgba(54, 34, 184, 0.173);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+
+        @media only screen and (min-resolution: 250dpi) {
+            #banner {
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9IK3ymoChHix93DA2MNReciv2D81wMgXdKyR7qUWmw&s");
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            #banner h5 {
+                font-size: 2.75rem;;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="box">BOX</div>
+        <br><br>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Links</a>
+        </nav>
+
+        <br><br>
+
+        <div id="banner">
+            <h5>
+                Solo Traveller
+            </h5>
+        </div>
+    </body>
+</html>
