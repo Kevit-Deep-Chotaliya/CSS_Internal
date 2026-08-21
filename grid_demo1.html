@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid Demo</title>
+        <link rel="stylesheet" href="style1.css">
+        <style>
+       
+        .template {
+            display: grid;
+            gap: 30px;
+            grid-template-areas: "header header header"
+                                 "nav article article"
+                                 "nav left right"
+                                 "footer footer footer";
+            grid-template-columns: 200px 400px 200px;
+            grid-template-rows: 500px 200px 600px 200px;
+            width: 100px;
+        }
+        .header {
+            grid-area: header;
+            background-color: hsla(0, 100%, 50%, 0.2);
+            text-align: center;
+            font-size: 30px;
+            align-content: center;
+        }
+        .nav {
+            grid-area: nav;
+            background-color: hsla(240, 100%, 50%, 0.2);
+            align-content: center;
+            text-align: center;
+            font-size: 30px;
+        }
+        .article {
+            grid-area: article;  
+            background-color: hsla(120, 100%, 50%, 0.2);
+            align-content: center;
+            text-align: center;
+            font-size: 30px;
+        }
+        .left {
+            grid-area: left;
+            background-color: hsla(300, 100%, 50%, 0.2);
+            align-content: center;
+            text-align: center;
+            font-size: 30px;
+        }
+        .right {                
+            grid-area: right;
+            background-color: hsla(180, 100%, 50%, 0.2);
+            align-content: center;
+            text-align: center;
+            font-size: 30px;
+        }
+        .footer {                   
+            grid-area: footer;
+            background-color: hsla(100, 100%, 50%, 0.2);
+            align-content: center;
+            text-align: center;
+            font-size: 30px;
+        }                  
+    </style>
+    </head>
+    <body>
+
+        <div class="template">
+            <div class="items header">header</div>
+            <div class="items nav">nav</div>
+            <div class="items article">article</div>
+            <div class="items left">left</div>
+            <div class="items right">right</div>
+            <div class="items footer">footer</div>
+        </div>
+    </body>
+</html>
