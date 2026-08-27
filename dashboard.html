@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            .dashboard {
+                display: flex;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+            }
+            .sidebar {
+                width: 250px;
+                background-color: #2f4863;
+                color: white;
+                padding: 20px;
+            }
+            .sidebar h3 {
+                 margin-top: 0;
+                 border-bottom: 1px solid #34495e;
+                 padding-bottom: 10px;
+            }
+            .sidebar ul {
+                padding: 0;
+                list-style: none;
+            }
+            .sidebar ul li {
+                margin: 10px 0;
+            }
+            .sidebar ul li a{
+                color: white;
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 4px;
+                display: block;
+            }
+            .sidebar ul li a:hover {
+                background-color: #4473a1;
+            }
+            .main-content {
+                flex-grow: 1;
+                padding: 30px;
+                background-color: #ecf0f1;
+                overflow-y: auto;
+                flex-shrink: 1;
+            }
+            .content-cards {
+                display: flex;
+                margin-top: 30px;
+                gap: 20px;
+            }
+            .card {
+                flex-grow: 1;
+                background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+            }
+            .main-content p {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dashboard">
+            <aside class="sidebar">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </aside>
+            <main class="main-content">
+                <h1>Dashboard Content</h1>
+                <p>This is the main content area that expands to fill available
+                    space.</p>
+                <div class="content-cards">
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 2</div>
+                    <div class="card">Card 3</div>
+                </div>
+
+            </main>
+        </div>
+
+    </body>
+</html>
