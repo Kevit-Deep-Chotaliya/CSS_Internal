@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                display: flex;
+                padding: 20px;
+                flex-wrap: wrap;
+            }
+            .left {
+               flex: 70%;
+               margin-top: 10px;
+               flex-flow: row wrap;
+            }
+            .right {
+                flex: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <main class="left">
+                <h1>Nescafe</h1>
+                <img
+                    src="https://www.nescafe.com/mena/sites/default/files/styles/image_webp_conversion/public/2026-01/mena.jpg.webp?itok=8LPYxc4M"
+                    alt="Nescafe Products" width="500px" height="300px">
+                <p>Coffee is one of the most popular beverages there is, with
+                    billions of cups enjoyed every year. Given that coffee is so
+                    well loved around the world, it’s only natural for us to
+                    want to
+                    know more about our favourite brew. That’s why we at
+                    NESCAFÉ®
+                    have compiled this list of our favourite coffee fun facts
+                    for
+                    you.</p>
+                <h4>1. Coffee goes back a really long way</h4>
+                <p>Coffee is thought to date back to 800 A.D., where it was
+                    discovered by 9th century goat herders. It was said that
+                    they
+                    noticed their goats eating the plant and afterwards it
+                    appeared
+                    like they were ‘dancing’. Fascinated by the results, the
+                    goat
+                    herder tried them himself and discovered that it made him
+                    excitable too.</p>
+            </main>
+
+            <aside class="right">
+                <section>
+                    <h3>NESCAFÉ® Coffee Finder</h3>
+                    <h5>Good Evening</h5>
+                    <small>We've got a wide range of products, so let's find the
+                        right NESCAFÉ® for you.</small>
+                </section>
+            </aside>
+        </div>
+    </body>
+</html>
